@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <form action="">
+       <datalist id="email-list">
+           <option>hiroysana@gmail.com</option>
+           <option>hiroysana@gmail.com</option>
+           <option>roseysana@gmail.com</option>
+           <option>maryysana@gmail.com</option>
+       </datalist>
+    <input 
+    multiple 
+    type="email"
+    minlength="8"
+    maxlength="20"
+    placeholder="maryysana@gmail.com"
+    pattern=".+@gmail\.com"
+    title="Use o Gmail"
+    list="email-list"
+    >
+    <button type="submit">ENVIAR</button>
+
+    <br>
+    <hr>
+
+       <datalist id="url-list">
+           <option>https://youtube.com.br/</option>
+           <option>https://youtube.com.br/</option>
+           <option>https://youtube.com.br/</option>
+           <option>https://youtube.com.br/</option>
+           <option>https://youtube.com.br/</option>
+       </datalist>
+
+    <input 
+    multiple 
+    type="url"
+    minlength="8"
+    maxlength="200"
+    placeholder="https://youtube.com/"
+    pattern=".*\.com\.br.*"
+    title="Use o Gmail"
+    list="url-list"
+    spellcheck="true"
+    >
+    <button type="submit">ENVIAR</button>
+
+    <br>
+    <hr>
+
+    <input type="file" accept=".js">
+
+    
+    <br>
+    <hr>
+
+
+   </form>
+
+   <form >
+       <legend>Choose your interests</legend>
+       <div>
+           <input type="checkbox" id="coding" name="interest" value="coding" checked>
+           <label for="coding">Coding</label>
+       </div>
+       <div>
+        <input type="checkbox" id="music" name="interest" value="music">
+        <label for="coding">Music</label>
+    </div>
+
+
+
+   
+   </form>
+  
+   <br>
+   <hr>
+
+   <form action=""> 
+    <fieldset>
+        <legend>Bora tomar um café?</legend>
+
+        <label for="yep">sim</label>
+        <input type="radio" id="yep" name="coffee" value="yes">
+
+        <label for="nono">não</label>
+        <input type="radio" id="nono" name="coffee" value="no">
+    </fieldset>
+
+   </form>
+
+   <br>
+   <hr>
+
+   
+   <textarea id="test" cols="30" rows="10" maxlength="1000" minlength="50" wrap="soft" placeholder="Digte sua mensagem"></textarea>
+
+   
+   <br>
+   <hr>
+
+   <label for="car-select">Qual modelo do carro?</label>
+   <select name="carmodel" id="car-select" size="2">
+       <option>Selecione o Modelo do Carro</option>
+       <option>Fiat Palio</option>
+       <option>Corolla</option>
+   </select>
+
+   <br>
+   <hr>
+
+   <label for="">Please choose one or more pets:
+        <select name="names" multiple size="4">
+            <optgroup label="4-Legged pets">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="hamster" disabled>Hamster</option>
+            </optgroup>
+            <optgroup label="Flying pets">
+                <option value="parrot">Parrot</option>
+                <option value="macaw">Macaw</option>
+                <option value="albatros" disabled>Albatross</option>
+            </optgroup>
+        </select>
+
+   </label>
+
+   <br>
+   <hr>
+
+   <datalist id="searchterms">
+       <option>Mac</option>
+       <option>Linux</option>
+       <option>Windows</option>
+       <option>Ubuntu</option>
+       <option>XP</option>
+   </datalist>
+
+
+
+   <form action="">
+    <input 
+    type="search" 
+    name="q" 
+    list="searchterms" 
+    placeholder="Encontre sua procura"
+    aria-label="Campo de pesquisa: Encontre oque procura"
+    >
+    <button>Pesquisar</button>
+   </form>
+
+   <br>
+   <hr>
+
+   <form action="">
+    <label for="">Pesquisar pelo ID</label>
+    <input 
+    type="search" 
+    name="id" 
+    pattern="[0-10]"
+    title="Coloque um número entre 0 e 10"
+    >
+    <button>Pesquisar</button>
+   </form>
+
+   <br>
+   <hr>
+
+   <datalist id="testing">
+       <option>10</option>
+       <option>20</option>
+   </datalist>
+
+  <form action="">
+    <input 
+    list="testing"
+    type="number"
+   
+     >
+     <button >ENVIAR</button>
+  </form>
+
+  
+  <br>
+  <hr>
+
+  <input type="range" min="20" max="200" value="80">
+
+  <br>
+  <hr>
+
+  
+
+</body>
+</html>
